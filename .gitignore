@@ -12,6 +12,7 @@ node_modules/
 .env
 .deployment
 .DS_Store
+.idea
 
 # build
 lib/
@@ -23,4 +24,4 @@ lib/
 .notification.testtoolstore.json
 
 # Dev tool directories
-/devTools/
+/devTools
