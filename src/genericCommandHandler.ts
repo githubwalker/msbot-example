@@ -1,5 +1,6 @@
 import { Activity, TurnContext } from "botbuilder";
 import { CommandMessage, TeamsFxBotCommandHandler, TriggerPatterns } from "@microsoft/teamsfx";
+import config from "./internal/config";
 
 /**
  * The `GenericCommandHandler` registers patterns with the `TeamsFxBotCommandHandler` and responds
@@ -16,6 +17,9 @@ export class GenericCommandHandler implements TeamsFxBotCommandHandler {
 
     let response = "";
     switch (message.text) {
+      case "config":
+        response = `config is : ${JSON.stringify(config)}`;
+        break;
       case "hi":
         response =
           "Hi there! I'm your Command Bot, here to assist you with your tasks. Type 'help' for a list of available commands.";
