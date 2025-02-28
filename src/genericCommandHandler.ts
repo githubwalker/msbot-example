@@ -34,6 +34,7 @@ export class GenericCommandHandler implements TeamsFxBotCommandHandler {
           "- 'hi' or 'hello': Say hi or hello to me, and I'll greet you back.\n" +
           "- 'help': Get a list of available commands.\n" +
           "- 'helloworld': See a sample response from me.\n" +
+          "- 'config': see bot config.\n" +
           "\nFeel free to ask for help anytime you need it!";
         break;
       default:
